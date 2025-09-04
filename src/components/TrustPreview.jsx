@@ -1,13 +1,26 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { CheckCircle, ChevronDown } from 'lucide-react';
+
+// Trust Component Card Imports
+import HandsOfHonorCard from './trustCards/HandsOfHonorCard';
+import CareAndCustodyCard from './trustCards/CareAndCustodyCard';
+import WitnessedGrowthCard from './trustCards/WitnessedGrowthCard';
+import ScholarsFlameCard from './trustCards/ScholarsFlameCard';
+import CreativeStewardCard from './trustCards/CreativeStewardCard';
+import BuildersLedgerCard from './trustCards/BuildersLedgerCard';
+import MentorsPathCard from './trustCards/MentorsPathCard';
+import SoulAnchorCard from './trustCards/SoulAnchorCard';
 
 const TrustPreview = () => {
   // Adding Base State Logic
 
   const [showMore, setShowMore] = useState(false);
   return (
-    <section className="w-full py-16 px-6 md:px-16 bg-white" id="trust-preview">
+    <section
+      className="w-full py-16 px-6 md:px-16 bg-[#F8F9FB]"
+      id="trust-preview"
+    >
       <div className="max-w-5xl mx-auto">
         {/* within the div, I have a h2 */}
 
@@ -18,7 +31,6 @@ const TrustPreview = () => {
         <p className="text-lg text-gray-700 mb-8">
           A glimpse into the kinds of trust MpatiQ can reflect and reveal.
           {/* <span className="italic text-gray-500"> Yours awaits.</span> */}
-         
         </p>
         <p className="text-gray-500 italic text-sm text-center mt-1 mb-10">
           Yours awaits.
@@ -26,102 +38,22 @@ const TrustPreview = () => {
 
         {/* Our Cards or visual elements will go here. */}
         {/* We now build our first preview block, this will be our visual storytelling unit that reflects a sample trust signal or transformation. */}
-        <div className="bg-gray-50 rounded-2xl shadow-md p-6 mb-6">
-          <h3 className="text-xl font-semibold text-gray-900 mb-2 flex items-center gap-2">
-            Hands of Honor
-            {/* Adding in a span class to show verified metatags */}
-            <span className="text-xs text-white bg-gray-700 px-2 py-0.5 rounded-full">
-              {' '}
-              5yr Track{' '}
-            </span>
-          </h3>
 
-          {/*  */}
-          <p className="text-gray-700 text-base mb-2">
-            Ms. J, A Lyft driver in Macomb, IL. has completed over 21,000 rides
-            since 2020 till now with perfect punctuality.
-          </p>
-          <p className="text-sm text-gray-500">
-            MpatiQ recognizes <em>Service Diligence</em>,{' '}
-            <em>Consistency Over Time.</em>
-          </p>
-        </div>
-        {/* Block 2 */}
-        {/* Aminah */}
-        <div className="bg-gray-50 rounded-2xl shadow-md p-6 mb-6">
-          <div className="flex flex-wrap items-center gap-2 mb-2">
-            <h3 className="text-xl font-semibold text-gray-900">
-              Care and Custody
-            </h3>
-            {/* Tags */}
-            <span className="text-xs text-white bg-gray-700 px-2 py-0.5 rounded-full">
-              Peer Endorsed
-            </span>
-            <span className="text-xs text-white bg-gray-700 px-2 py-0.5 rounded-full">
-              Community Endorsed
-            </span>
-          </div>
+        {/* Block 1~ Hands of Honor Card (Ms.J) */}
+        <HandsOfHonorCard />
 
-          <p className="text-gray-700 text-base mb-2">
-            Over the last 9 years in Atlanta, Aminah has worked night shifts in
-            pediatric oncology. She's stayed past shifts to sit with grieving
-            families, covered coworkers' emergencies without being asked, and
-            never missed a single handoff in 3,200 shifts.
-          </p>
+        {/* Block 2~ Care and Custody Card (Aminah) */}
+        <CareAndCustodyCard />
 
-          <p className="text-sm text-gray-500">
-            MpatiQ recognizes <em>Emotional Reliability</em>,{' '}
-            <em>Presence in Vulnerable Roles</em>,{' '}
-            <em>Consistency Over Time</em>.
-          </p>
-        </div>
+        {/* Block 3~ Witnessed Growth Card (Carlos) */}
 
-        {/* Block 3 */}
-        {/* Carlos */}
-        <div className="bg-gray-50 rounded-2xl p-6 mb-6 shadow-md">
-          <h3 className=" text-xl font-semibold mb-2 text-gray-900 flex items-center gap-2">
-            Witnessed Growth
-            <span className="text-xs px-2 bg-gray-700 text-white py-0.5 rounded-full">
-              Dignity
-            </span>
-          </h3>
-          <p className="mb-2 text-base text-gray-700">
-            After two account suspensions for missed deliveries, Carlos
-            returned. Over the next 18 months, he rebuilt trust-delivering 1,400
-            orders with verified on-time records.
-          </p>
-          <p className="text-sm text-gray-500">
-            MpatiQ recognizes <em>Redemptive Growth</em>,{' '}
-            <em>Service Diligence,</em>
-            <em>Consistency Over Time</em>.{' '}
-          </p>
-        </div>
+        <WitnessedGrowthCard />
+
+        {/* Block 4~ Scholar's Flame (Zed) */}
 
         {/* Scholar's Flame */}
-        <div className="bg-gray-50 rounded-2xl shadow-md p-6 mb-6">
-          {/* Scoped Div */}
-          <div className="flex flex-wrap items-baseline gap-2 mb-2">
-            <h3 className=" text-xl text-gray-900 font-semibold mb-2">
-              Scholar's Flame{' '}
-            </h3>
-            <span className="text-xs text-white bg-gray-700 px-2 py-0.5 rounded-full -translate-y-[1px]">
-              Self-Made
-            </span>
-            <span className="text-xs text-white bg-gray-700 px-2 py-0.5 rounded-full -translate-y-[1px]">
-              Inventor
-            </span>
-            <p className="text-gray-700 text-base mb-2">
-              In a quiet corner of Ebonyi State, Zed has spent over 5,000 logged
-              hours self-studying electrical engineering and applying it into
-              propulsion inventions. He made his first export in August and
-              continues forward.{' '}
-            </p>
-            <p className="text-sm text-gray-500">
-              MpatiQ recognizes <em>Learning/Teaching Honor</em>,{' '}
-              <em>Consistency Over Time</em>.
-            </p>
-          </div>
-        </div>
+        <ScholarsFlameCard />
+
         {/* Okay, right after here we add JSX that allows to 'Show More.' We're using hooks to alter state */}
         {/* Toggle Button */}
         <div className="flex justify-center mt-4">
@@ -158,119 +90,302 @@ const TrustPreview = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{
+                height: { duration: 0.5 },
+                opacity: { delay: 0.2, duration: 0.7 },
+              }}
               className="mt-8 space-y-6 overflow-hidden"
             >
               {/* Blocks 5-8 */}
-              {/* Creative Steward */}
-              <div className="bg-gray-50 rounded-2xl shadow-md p-6 mb-6">
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    Creative Steward
-                  </h3>
-                  <span className="text-xs text-white bg-indigo-600 px-2 py-0.5 rounded-full -translate-y-0.5">
-                    Collective-led
-                  </span>
-                  {/* Span2~ Badge 2 */}
-                  <span className="text-xs text-white bg-gray-800 px-2 py-0.5 rounded-full -translate-y-0.5">
-                    Community
-                  </span>
-                </div>
-                <p className="text-gray-700 text-base mb-2">
-                  In East London, a creative collective has over the years
-                  become a sanctuary of expression-hosting free Thursday
-                  gatherings, sharing members poems and pieces, and growing a
-                  new creative canon.
-                </p>
-                <p className="text-sm text-gray-500">
-                  MpatiQ recognizes <em>Creative Stewardship</em>,{' '}
-                  <em>Community Integrity</em> and{' '}
-                  <em>Presence in Vulnerable Roles</em>.
-                </p>
-              </div>
+              {/* Creative Steward Card~ (East London example) */}
+              <CreativeStewardCard />
+
               {/* Block 6 */}
               {/* Builder's Ledger */}
+              <BuildersLedgerCard/>
 
-              <div className="bg-gray-50 rounded-2xl shadow-md p-6 mb-6">
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    Builder's Ledger
-                  </h3>
-                  <span className="text-xs text-white bg-blue-700 px-2 py-0.5 rounded-full -translate-y-0.5">
-                    Builder
-                  </span>
-                  {/* Span2~ Badge 2 */}
-                  <span className="text-xs text-white bg-gray-800 px-2 py-0.5 rounded-full -translate-y-0.5">
-                    Steward
-                  </span>
-                </div>
-                <p className="text-gray-700 text-base mb-2">
-                  A Ghanaian founder based in Kumasi has created a tool that
-                  helps rural farmers access real-time weather alerts and
-                  coordinate shared transport for harvests - all optimized for
-                  low-bandwidth areas. The system now supports over 40 villages.
-                </p>
-                <p className="text-sm text-gray-500">
-                  MpatiQ recognizes <em>Service Diligence</em>,{' '}
-                  <em>Community Integrity</em>.
-                </p>
-              </div>
               {/* Block 7 */}
               {/* Mentor's Path */}
-              <div className="bg-gray-50 rounded-2xl shadow-md p-6 mb-6">
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    Mentor's Path
-                  </h3>
-                  <span className="text-xs text-white bg-red-700 px-2 py-0.5 rounded-full -translate-y-0.5">
-                    Legacy
-                  </span>
-                  {/* Span2~ Badge 2 */}
-                  <span className="text-xs text-white bg-gray-800 px-2 py-0.5 rounded-full -translate-y-0.5">
-                    Community
-                  </span>
-                </div>
-                <p className="text-gray-700 text-base mb-2">
-                  In the Crenshaw area of South LA, a clothing store rooted in
-                  legacy mentors youth and provides work for formerly
-                  incarcerated community members-offering whole paths with
-                  dignity.
-                </p>
-                <p className="text-sm text-gray-500">
-                  MpatiQ recognizes <em>Community Integrity</em>,{' '}
-                  <em>Redemptive Growth</em>.
-                </p>
-              </div>
+              <MentorsPathCard/>
+
               {/* Soul Anchor */}
-              <div className="bg-gray-50 rounded-2xl shadow-md p-6 mb-6">
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    Soul Anchor
-                  </h3>
-                  {/* Tags */}
-                  <span className=" text-xs rounded-full bg-purple-700 py-0.5 px-2 text-white">
-                    Devotion
-                  </span>
-                  <span className=" text-xs rounded-full bg-gray-800 py-0.5 px-2 text-white">
-                    Grief Transformed
-                  </span>
-                </div>
-                {/* Core P tag for Soul Anchor */}
-                <p className="text-gray-700 text-base mb-2">
-                  After losing her daughter, one woman began anonymously leaving
-                  flowers for new mothers at the same hospital. She has done
-                  this quietly for 9 years.
-                </p>
-                {/* Domain recognition */}
-                <p className="text-sm text-gray-500">
-                  MpatiQ recognizes <em>Presence in Vulnerable Roles</em>,{' '}
-                  <em>Emotional Reliability</em>, <em>Consistency Over Time</em>
-                  .
-                </p>
-              </div>
+              <SoulAnchorCard/>
+
             </motion.div>
           )}
         </AnimatePresence>
+
+        {/* The 'Animate Presence' held everything on the Show more sequence~from button on-click actions to the hidden cards */}
+        {/* __________________________________________________________________ */}
+
+        {/* Divider: Start of the Trust Matrix Section */}
+        {/* Divider: Start of the Trust Matrix Section */}
+        {/* Divider: Start of the Trust Matrix Section */}
+
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-4">
+            Trust Domains & Passports
+          </h2>
+          <p className="text-center text-sm text-gray-600 max-w-xl mx-auto">
+            Each Trust Passport draws strength from the core Domains we
+            recognize. Through them, MpatiQ structures dignity, reliability, and
+            honor into living digital representations.
+          </p>
+          {/* Experiment incoming */}
+          {/* Two-Column Grid */}
+          <div className="mt-10 max-w-5xl mx-auto">
+            {/* Two-Column Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Left Column: Domains */}
+              {/* Left Column: Domains */}
+              {/* Left Column: Domains */}
+
+              {/* I'm experimenting with a wrap to visually segment TD from TP */}
+              <div className="bg-gray-50 rounded-lg p-6 shadow-sm relative overflow-hidden">
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Trust Domains
+                  </h3>
+                  {/* Shimmer line */}
+                  <div className=" md:flex justify-center mt-1">
+                    <div className="w-[100%] h-px bg-gradient-to-r from-transparent via-indigo-400 to-transparent animate-pulse" />
+                  </div>
+                  {/* Icon and Domain lists */}
+                  <div className="mt-4 space-y-4 text-left max-w-md mx-auto divide-y divide-gray-100">
+                    {/* Domain 1 ~ Service Diligence */}
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 mt-1 text-indigo-600 flex-shrink-0" />
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">
+                          Service Diligence
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Reliability in service roles, task completion, and
+                          timeliness.
+                        </p>
+                      </div>
+                    </div>
+                    {/* Domain Item 2 */}
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 mt-1 text-indigo-600 flex-shrink-0" />
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">
+                          Community Integrity
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Ethical presence and accountability in shared
+                          community spaces.
+                        </p>
+                      </div>
+                    </div>
+                    {/* Domain 3 ~ Emotional Reliability  */}
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="text-indigo-600 flex-shrink-0 w-5 h-5 mt-1" />
+                      {/* The Div to house my two <p>'s */}
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">
+                          Emotional Reliability
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Discernment, calm, and presence in vulnerable moments.
+                        </p>
+                      </div>
+                    </div>
+                    {/* Domain 4 ~ Consistency Over Time */}
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 mt-1 text-indigo-600 flex-shrink-0" />
+                      {/* Div holding my p's */}
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">
+                          Consistency Over Time
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Trust built through long-term reliability and
+                          presence.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Domain 5 ~ Learning/Teaching Honor */}
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 mt-1 text-indigo-600 flex-shrink-0" />
+                      {/* Div holding my p's */}
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">
+                          Learning/Teaching Honor
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Integrity and care in how one learns or teaches
+                          knowledge.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Domain 6 ~ Presence In Vulnerable Roles */}
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 mt-1 text-indigo-600 flex-shrink-0" />
+                      {/* Div holding my p's */}
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">
+                          Presence in Vulnerable Roles
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Steadiness and care in moments or roles of
+                          vulnerability.
+                        </p>
+                      </div>
+                    </div>
+                    {/* Domain 7 ~ Redemptive Growth */}
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 mt-1 text-indigo-600 flex-shrink-0" />
+                      {/* Div holding my p's */}
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">
+                          Redemptive Growth
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Transformation after harm or failure, earning trust
+                          through change.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-0">
+                      <img
+                        src="/MpatiQ_Emblem.svg"
+                        alt="MpatiQ Emblem"
+                        className="h-36 w-36 opacity-5 grayscale"
+                      />
+                    </div>
+                    {/* Testing bottom footer still within core div holding all domains but outside the domain items' divs */}
+
+                    <div className="mt-6 h-px bg-gradient-to-r from-transparent via-indigo-400 to-transparent" />
+
+                    {/* Domain List End space-y */}
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column: Passports */}
+              {/* I'm experimenting with a wrap to visually segment TD from TP */}
+              <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Trust Passports
+                  </h3>
+                  {/* Same shimmer alignment handled by the left side already */}
+                  {/* Shimmer line only visible on desktop */}
+                  <div className=" md:flex justify-center mt-1">
+                    <div className="w-[100%] h-px bg-gradient-to-r from-transparent via-indigo-400 to-transparent animate-pulse" />
+                  </div>
+                  <div className="mt-4 space-y-4 text-left max-w-md mx-auto">
+                    {/* Passport items here */}
+                    {/* Passport 1 ~ Hands of Honor */}
+                    <div className="rounded-lg border border-gray-200 p-4 shadow-sm bg-white">
+                      <p className="text-sm font-semibold text-gray-800">
+                        Hands of Honor
+                      </p>
+                      <p className="text-sm text-gray-600 mt-1">
+                        Upholding trust through skilled, diligent, and faithful
+                        service.
+                      </p>
+                    </div>
+                    {/* Passport 2~ Care and Custody */}
+                    <div className="rounded-lg border border-gray-200 p-4 shadow-sm bg-white">
+                      <p className="text-sm font-semibold text-gray-800">
+                        Care and Custody
+                      </p>
+                      {/* Descriptor */}
+                      <p className="text-sm text-gray-600 mt-1">
+                        Trust earned through compassion, vigilance, and
+                        consistent care.
+                      </p>
+                    </div>
+                    {/* Passport 3~ Witnessed Growth */}
+                    <div className="rounded-lg border border-gray-200 p-4 shadow-sm bg-white">
+                      <p className="text-sm font-semibold text-gray-800">
+                        Witnessed Growth
+                      </p>
+                      {/* Descriptor */}
+                      <p className="text-sm text-gray-600 mt-1">
+                        Trust earned through transformation, witnessed by
+                        others.
+                      </p>
+                    </div>
+                    {/* Passport 4 ~ Scholar's Flame */}
+
+                    <div className="rounded-lg border border-gray-200 p-4 shadow-sm bg-white">
+                      <p className="text-sm font-semibold text-gray-800">
+                        Scholar's Flame
+                      </p>
+                      {/* Descriptor */}
+                      <p className="text-sm text-gray-600 mt-1">
+                        Trust forged in unseen rigor, depth, and self-driven
+                        fire of learning.
+                      </p>
+                    </div>
+
+                    {/* ______________ */}
+                    {/* Passport 5 ~  Creative Steward*/}
+
+                    <div className="rounded-lg border border-gray-200 p-4 shadow-sm bg-white">
+                      <p className="text-sm font-semibold text-gray-800">
+                        Creative Steward
+                      </p>
+                      {/* Descriptor */}
+                      <p className="text-sm text-gray-600 mt-1">
+                        Trust earned by stewarding expression and shaping
+                        meaning.
+                      </p>
+                    </div>
+
+                    {/* Passport 6 ~ Builder's Ledger */}
+
+                    <div className="rounded-lg border border-gray-200 p-4 shadow-sm bg-white">
+                      <p className="text-sm font-semibold text-gray-800">
+                        Builder's Ledger
+                      </p>
+                      {/* Descriptor */}
+                      <p className="text-sm text-gray-600 mt-1">
+                        Trust shaped through consistent creation that endures
+                        across time.
+                      </p>
+                    </div>
+
+                    {/* Passport 7 ~ Mentor's Path */}
+
+                    <div className="rounded-lg border border-gray-200 p-4 shadow-sm bg-white">
+                      <p className="text-sm font-semibold text-gray-800">
+                        Mentor's Path
+                      </p>
+                      {/* Descriptor */}
+                      <p className="text-sm text-gray-600 mt-1">
+                        Trust built through guidance and principled sharing of
+                        insight.
+                      </p>
+                    </div>
+                    {/* Passport 8 ~  Soul Anchor */}
+
+                    <div className="rounded-lg border border-gray-200 p-4 shadow-sm bg-white">
+                      <p className="text-sm font-semibold text-gray-800">
+                        Soul Anchor
+                      </p>
+                      {/* Descriptor */}
+                      <p className="text-sm text-gray-600 mt-1">
+                        Quiet trust built through presence in grief, transition,
+                        and recovery.
+                      </p>
+                    </div>
+                    {/* End of Passport List */}
+                  </div>
+                </div>
+              </div>
+              {/* Above this, the div right aboe ends the separator treatment giving the trust passports */}
+            </div>
+          </div>
+
+          {/* End of div that holds this Trust Domains & Passport Section */}
+        </div>
       </div>
     </section>
   );
