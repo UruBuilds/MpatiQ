@@ -1,6 +1,7 @@
 //  We will now lay out our core sections(6) at this moment with empty tags/placeholders
 
 import React from 'react';
+import Navbar from '../components/Navbar';
 import TrustPreview from '../components/TrustPreview';
 import { motion } from 'framer-motion'; //importing motion from framer-motion
 export default function Landing() {
@@ -13,6 +14,8 @@ export default function Landing() {
 
   return (
     <div className="bg-indigo-800 min-h-screen">
+      {/* Place our NavBar here, just inside the top level div/central container before even the next~ in this case: main */}
+      <Navbar />
       <main className="min-h-screen flex flex-col">
         {/* 1. Hero- Opening Breath */}
         <section
@@ -445,8 +448,35 @@ export default function Landing() {
         <TrustPreview />
 
         {/* 4.Call to Action - The Invitation */}
-        <section id="cta" className="py-20">
+        <section id="get-started" className="bg-white py-20">
           {/* This section holds the CTA content */}
+          <div className="max-w-2xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 className="font-bold text-gray-900 text-2xl mb-2">
+              Join the Waitlist
+            </h2>
+            <p className="text-sm text-gray-600 mb-6">
+              Be among the first to walk the path. We'll let you know when
+              MpatiQ opens.
+            </p>
+            {/* Let's now add in the form block */}
+            <form className='flex flex-col sm:flex-row items-center justify-center gap-4'>
+              {/* Input field */}
+              <input
+               type="email"
+               required
+               placeholder='Enter your email'
+               className='w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500'
+               
+               />
+              <button
+                type='submit'
+                className='px-6 py-2 rounded-md bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition'
+              
+              >
+                Notify me
+              </button>
+            </form>
+          </div>
         </section>
 
         {/* 5. Field Notes & Soul- The Archive */}

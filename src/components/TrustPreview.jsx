@@ -32,6 +32,7 @@ const TrustPreview = () => {
           A glimpse into the kinds of trust MpatiQ can reflect and reveal.
           {/* <span className="italic text-gray-500"> Yours awaits.</span> */}
         </p>
+        
         <p className="text-gray-500 italic text-sm text-center mt-1 mb-10">
           Yours awaits.
         </p>
@@ -102,15 +103,14 @@ const TrustPreview = () => {
 
               {/* Block 6 */}
               {/* Builder's Ledger */}
-              <BuildersLedgerCard/>
+              <BuildersLedgerCard />
 
               {/* Block 7 */}
               {/* Mentor's Path */}
-              <MentorsPathCard/>
+              <MentorsPathCard />
 
               {/* Soul Anchor */}
-              <SoulAnchorCard/>
-
+              <SoulAnchorCard />
             </motion.div>
           )}
         </AnimatePresence>
@@ -122,7 +122,10 @@ const TrustPreview = () => {
         {/* Divider: Start of the Trust Matrix Section */}
         {/* Divider: Start of the Trust Matrix Section */}
 
-        <div className="mt-16">
+        <div className="mt-16" id="trust-matrix">
+          {/* TRUST MATRIX */}
+          {/* TRUST MATRIX */}
+
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-4">
             Trust Domains & Passports
           </h2>
