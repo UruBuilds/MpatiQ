@@ -18,7 +18,7 @@ const TrustPreview = () => {
   const [showMore, setShowMore] = useState(false);
   return (
     <section
-      className="w-full py-16 px-6 md:px-16 bg-[#F8F9FB]"
+      className="w-full pt-24 pb-16 px-6 md:px-16 bg-white"
       id="trust-preview"
     >
       <div className="max-w-5xl mx-auto">

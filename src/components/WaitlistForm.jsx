@@ -48,7 +48,7 @@ const WaitlistForm = () => {
 
   return (
     // 4.Call to Action - The Invitation
-    <section id="get-started" className="bg-white py-20">
+    <section id="get-started" className="bg-gray-50 py-20">
       {/* This section holds the CTA content */}
       <div className="max-w-2xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <h2 className="font-bold text-gray-900 text-2xl mb-2">
