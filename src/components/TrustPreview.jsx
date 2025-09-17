@@ -25,14 +25,15 @@ const TrustPreview = () => {
         {/* within the div, I have a h2 */}
 
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Trust Preview
+          <span className="text-indigo-600">Trust</span>{' '}
+          <span className="italic">Preview</span>
         </h2>
         {/* Core p tag */}
         <p className="text-lg text-gray-700 mb-8">
           A glimpse into the kinds of trust MpatiQ can reflect and reveal.
           {/* <span className="italic text-gray-500"> Yours awaits.</span> */}
         </p>
-        
+
         <p className="text-gray-500 italic text-sm text-center mt-1 mb-10">
           Yours awaits.
         </p>

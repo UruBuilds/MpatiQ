@@ -36,7 +36,7 @@ export default function Landing() {
         {/* 1. Hero- Opening Breath */}
         <section
           id="hero"
-          aria-label='MpatiQ hero section'
+          aria-label="MpatiQ hero section"
           className="min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-b from-gray-100 via-gray-100 to-gray-400"
         >
           {/* We will replace the classic divs that were here with framer-motion's */}
@@ -64,7 +64,7 @@ export default function Landing() {
               transition={{ duration: 2.0, ease: 'easeOut' }}
               className="text-4xl md:text-6xl font-bold text-gray-900"
             >
-              Trust, made visible.
+              <span className="text-indigo-600">Trust</span>, made visible.
             </motion.h1>
 
             {/* SUB-HEADLINE */}
@@ -77,9 +77,9 @@ export default function Landing() {
               transition={{ duration: 2.0, ease: 'easeOut' }}
               className="text-xl md:text-2xl text-gray-700 leading-loose max-w-2xl mx-auto"
             >
-              MpatiQ offers a fairer way to show and find trust — for those who
-              carry integrity even when unseen. We honor what you’ve done and
-              who you are becoming.
+              MpatiQ offers a fairer way to show and find trust — honoring what
+              you’ve carried. <br />
+              Who you are <span className='font-semibold text-indigo-600'>becoming</span>.
             </motion.p>
 
             {/* A SOUL ECHO */}
@@ -88,8 +88,8 @@ export default function Landing() {
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
               }}
-              transition={{ duration: 2.0, ease: 'easeOut', delay: 8 }}
-              className="mt-16 text-base md:text-lg italic text-gray-400"
+              transition={{ duration: 2.0, ease: 'easeOut', delay: 6.5 }}
+              className="mt-16 text-base md:text-lg italic text-gray-500"
             >
               A mirror of your presence in the world.
             </motion.p>
@@ -111,7 +111,6 @@ export default function Landing() {
           <TrustPreview />
         </motion.div>
 
-
         {/* ______________________________________________________________ */}
         {/* ______________________________________________________________ */}
         {/* ===== ABOUT ===== */}
@@ -119,51 +118,9 @@ export default function Landing() {
         <AboutSection />
 
         {/* <!-- 4. The Quiet Truth – Even If Unseen --> */}
-        {/* MIGHT REPLACE THIS COMPLETELY WITH `HOW IT WORKS` */}
+        {/* MIGHT REPLACE THIS COMPLETELY WITH `HOW IT WORKS REMOVING COMPLETELY FOR NOW` */}
 
-        <section
-          id="quiet-truth"
-          className="py-20 px-6 bg-white flex justify-center"
-        >
-          <div className="max-w-3xl space-y-6 text-center">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="text-lg md:text-xl text-gray-800 leading-relaxed"
-            >
-              We want light.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-lg md:text-xl text-gray-800 leading-relaxed"
-            >
-              Light that guides rather than blinds.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="text-lg md:text-xl text-gray-800 leading-relaxed"
-            >
-              Truth, layered. Integrity, protected.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.7 }}
-              viewport={{ once: true }}
-              className="text-lg md:text-xl text-gray-800 leading-relaxed"
-            >
-              No utopia that hides rot.
-            </motion.p>
-          </div>
-        </section>
+        
 
         {/* ===== CTA ===== */}
         {/* 4. Call to Action - The Invitation To Our Waitlist */}

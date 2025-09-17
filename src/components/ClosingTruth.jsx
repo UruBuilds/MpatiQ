@@ -7,75 +7,84 @@ import { motion } from 'framer-motion';
 export default function ClosingTruth() {
   return (
     <section
-      id="final-blessing"
+      id="closing-truth"
       className="py-20 px-6 bg-white flex justify-center"
     >
-      <div className="max-w-3xl space-y-6 text-center">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={{
+          hidden: {},
+          visible: {
+            // BIGGER STAGGER = more silence between each line
+            transition: { staggerChildren: 3.6, delayChildren: 0.8 },
+          },
+        }}
+        viewport={{ once: true }}
+        className="max-w-3xl space-y-10 text-center"
+      >
+        {/* Line 1 */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="text-lg md:text-xl text-gray-800 leading-relaxed"
+          variants={{
+            hidden: { opacity: 0, y: 28 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 3.0, ease: 'easeOut' }}
+          className="text-lg md:text-xl text-gray-800 leading-loose tracking-wide"
         >
-          We will see you. Especially if you’ve felt unseen.
+          Light that guides.
         </motion.p>
+
+        {/* Line 2 */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="text-lg md:text-xl text-gray-800 leading-relaxed"
+          variants={{
+            hidden: { opacity: 0, y: 28 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 2.8, ease: 'easeOut' }}
+          className="text-lg md:text-xl text-gray-800 leading-loose tracking-wide"
         >
-          We won’t guarantee anything—but we will give you a fairer chance.
+          Truth that holds.
         </motion.p>
+
+        {/* Line 3 */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="text-lg md:text-xl text-gray-800 leading-relaxed"
+          variants={{
+            hidden: { opacity: 0, y: 28 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 2.6, ease: 'easeOut' }}
+          className="text-lg md:text-xl text-gray-800 leading-loose tracking-wide"
         >
-          Businesses, too—we offer you purer signals.
+          Integrity, unshaken.
         </motion.p>
+
+        {/* BOLDER FONTED CLOSING LINES */}
+
+        {/* Line 4 */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.7 }}
-          viewport={{ once: true }}
-          className="text-lg md:text-xl text-gray-800 leading-relaxed"
+          variants={{
+            hidden: { opacity: 0, y: 28 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 3.0, ease: 'easeOut' }}
+          className="mt-14 text-lg md:text-xl text-gray-900 font-semibold leading-relaxed tracking-wide"
         >
-          And for those who seek to deceive, we will not whitewash your
-          fraudulence.
+          With you in this moment.
         </motion.p>
+
+        {/* Line 5 */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.9 }}
-          viewport={{ once: true }}
-          className="text-lg md:text-xl text-gray-800 leading-relaxed"
+          variants={{
+            hidden: { opacity: 0, y: 28 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 3.2, ease: 'easeOut' }}
+          className="text-lg md:text-xl text-gray-900 font-semibold leading-relaxed tracking-wide"
         >
-          We are not here to be gamed.
+          With you in what’s next.
         </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 1.1 }}
-          viewport={{ once: true }}
-          className="text-lg md:text-xl text-gray-800 leading-relaxed"
-        >
-          But for those striving, flawed, honest—we will reflect your humanity.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 1.3 }}
-          viewport={{ once: true }}
-          className="text-lg md:text-xl text-gray-800 leading-relaxed"
-        >
-          We will stand with your becoming.
-        </motion.p>
-      </div>
+      </motion.div>
     </section>
   );
 }
