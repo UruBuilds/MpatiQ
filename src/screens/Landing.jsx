@@ -7,6 +7,7 @@ import { easeOut, motion } from 'framer-motion'; //importing motion from framer-
 import WaitlistForm from '../components/WaitlistForm';
 import AboutSection from '../components/AboutSection';
 import ClosingTruth from '../components/ClosingTruth';
+import HowItWorks from '../components/HowItWorks';
 
 export default function Landing() {
   // export the Landing component as the default export from this page
@@ -117,10 +118,12 @@ export default function Landing() {
         {/* 3. About MpatiQ - The Meaning */}
         <AboutSection />
 
-        {/* <!-- 4. The Quiet Truth – Even If Unseen --> */}
-        {/* MIGHT REPLACE THIS COMPLETELY WITH `HOW IT WORKS REMOVING COMPLETELY FOR NOW` */}
-
+        {/* <!-- 4. How It Works: MpatiQ's flow --> */}
+        {/* === HOW IT WORKS === */}
         
+    
+
+        <HowItWorks/>
 
         {/* ===== CTA ===== */}
         {/* 4. Call to Action - The Invitation To Our Waitlist */}
