@@ -32,7 +32,7 @@ export default function Landing() {
     <div className="bg-white min-h-screen">
       {/* Place our NavBar here, just inside the top level div/central container before even the next~ in this case: main */}
       <Navbar />
-      <main className="min-h-screen flex flex-col">
+      <main id="top" className="min-h-screen flex flex-col">
         {/* ===== HERO ===== */}
         {/* 1. Hero- Opening Breath */}
         <section
@@ -80,7 +80,8 @@ export default function Landing() {
             >
               MpatiQ offers a fairer way to show and find trust — honoring what
               you’ve carried. <br />
-              Who you are <span className='font-semibold text-indigo-600'>becoming</span>.
+              Who you are{' '}
+              <span className="font-semibold text-indigo-600">becoming</span>.
             </motion.p>
 
             {/* A SOUL ECHO */}
@@ -120,10 +121,8 @@ export default function Landing() {
 
         {/* <!-- 4. How It Works: MpatiQ's flow --> */}
         {/* === HOW IT WORKS === */}
-        
-    
 
-        <HowItWorks/>
+        <HowItWorks />
 
         {/* ===== CTA ===== */}
         {/* 4. Call to Action - The Invitation To Our Waitlist */}

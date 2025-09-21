@@ -18,7 +18,7 @@ const TrustPreview = () => {
   const [showMore, setShowMore] = useState(false);
   return (
     <section
-      className="w-full pt-24 pb-16 px-6 md:px-16 bg-white"
+      className="w-full pt-24 pb-16 px-6 md:px-16 bg-white scroll-mt-20"
       id="trust-preview"
     >
       <div className="max-w-5xl mx-auto">
@@ -123,7 +123,7 @@ const TrustPreview = () => {
         {/* Divider: Start of the Trust Matrix Section */}
         {/* Divider: Start of the Trust Matrix Section */}
 
-        <div className="mt-16" id="trust-matrix">
+        <div className="mt-16 scroll-mt-40" id="trust-matrix">
           {/* TRUST MATRIX */}
           {/* TRUST MATRIX */}
 
