@@ -1,5 +1,10 @@
 // Care and Custody Card
 // Aminah
+
+// Importing the Badge component that has the universal Badge mapping
+
+import Badge from "../Badge";
+
 export default function CareAndCustodyCard() {
   return (
     <div className="bg-gray-50 rounded-2xl shadow-md p-6 mb-6">
@@ -7,13 +12,14 @@ export default function CareAndCustodyCard() {
         <h3 className="text-xl font-semibold text-gray-900">
           Care and Custody
         </h3>
-        {/* Tags */}
-        <span className="text-xs text-white bg-gray-700 px-2 py-0.5 rounded-full">
+        {/* Badge Component; category= time */}
+        <Badge category="structural" variant="primary">
           Peer Endorsed
-        </span>
-        <span className="text-xs text-white bg-gray-700 px-2 py-0.5 rounded-full">
+        </Badge>
+
+        <Badge category="structural" variant="secondary">
           Community Endorsed
-        </span>
+        </Badge>
       </div>
 
       <p className="text-gray-700 text-base mb-2">

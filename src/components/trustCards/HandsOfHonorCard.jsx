@@ -1,15 +1,19 @@
 // src/components/trust/HandsOfHonorCard.jsx
 
+// Importing the Badge component that has the universal Badge mapping
+
+import Badge from '../Badge';
+
 export default function HandsOfHonorCard() {
   return (
     <div className="bg-gray-50 rounded-2xl shadow-md p-6 mb-6">
       <h3 className="text-xl font-semibold text-gray-900 mb-2 flex items-center gap-2">
         Hands of Honor
-        {/* Adding in a span class to show verified metatags */}
-        <span className="text-xs text-white bg-gray-700 px-2 py-0.5 rounded-full">
+        {/* Badge Component: category ~ time */}
+        <Badge category="time" variant="primary">
           {' '}
           5yr Track{' '}
-        </span>
+        </Badge>
       </h3>
 
       {/*  */}

@@ -1,13 +1,19 @@
 // Witnessed Growth Card
 
+// Importing the Badge component that has the universal Badge mapping
+
+import Badge from '../Badge';
+
 export default function WitnessedGrowthCard(){
     return (
       <div className="bg-gray-50 rounded-2xl p-6 mb-6 shadow-md">
         <h3 className=" text-xl font-semibold mb-2 text-gray-900 flex items-center gap-2">
           Witnessed Growth
-          <span className="text-xs px-2 bg-gray-700 text-white py-0.5 rounded-full">
+          {/* Badge: Emotive */}
+          <Badge category="emotive" variant="primary">
+            
             Dignity
-          </span>
+          </Badge>
         </h3>
         <p className="mb-2 text-base text-gray-700">
           After two account suspensions for missed deliveries, Carlos returned.

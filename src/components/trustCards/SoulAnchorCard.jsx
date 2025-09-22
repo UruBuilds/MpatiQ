@@ -1,17 +1,25 @@
 // Soul Anchor Card
 
+// Importing the Badge component that has the universal Badge mapping
+import Badge from '../Badge';
+
 export default function SoulAnchorCard() {
   return (
     <div className="bg-gray-50 rounded-2xl shadow-md p-6 mb-6">
       <div className="flex flex-wrap items-center gap-2 mb-2">
         <h3 className="text-xl font-semibold text-gray-900">Soul Anchor</h3>
         {/* Tags */}
-        <span className=" text-xs rounded-full bg-purple-700 py-0.5 px-2 text-white">
-          Devotion
-        </span>
-        <span className=" text-xs rounded-full bg-gray-800 py-0.5 px-2 text-white">
+        {/* Badge Component 1 ~ Emotive  */}
+        <Badge category="emotive" variant="primary">
+           Devotion
+        </Badge>
+        
+
+        {/* Badge Component 2 ~ Emotive */}
+
+        <Badge category="emotive" variant="secondary">
           Grief Transformed
-        </span>
+        </Badge>
       </div>
       {/* Core P tag for Soul Anchor */}
       <p className="text-gray-700 text-base mb-2">
