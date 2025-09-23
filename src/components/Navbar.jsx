@@ -17,7 +17,7 @@ export default function Navbar() {
             {/* Placing MpatiQ's lOGO or other brand insignia here */}
 
             {/* An anchor tag that will hold both an image (MpatiQ's log) and a span with our name */}
-            <a href='#top' className="flex items-center space-x-2">
+            <a href="#top" className="flex items-center space-x-2">
               <img
                 src="/MpatiQ_Emblem.svg"
                 alt="MpatiQ Logo"
@@ -104,6 +104,7 @@ export default function Navbar() {
             {/* TRUST IN MOTION: MOBILE */}
             <a
               href="#trust-preview"
+              onClick={() => setIsOpen(false)}
               className="block text-sm font-medium text-gray-700 hover:text-indigo-600"
             >
               Trust in Motion
@@ -112,6 +113,7 @@ export default function Navbar() {
             {/* TRUST MATRIX: MOBILE */}
             <a
               href="#trust-matrix"
+              onClick={() => setIsOpen(false)}
               className="block text-sm font-medium text-gray-700 hover:text-indigo-600"
             >
               Trust Matrix
@@ -120,6 +122,7 @@ export default function Navbar() {
             {/* HOW IT WORKS: MOBILE */}
             <a
               href="#how-it-works"
+              onClick={() => setIsOpen(false)}
               className="block text-sm font-medium text-gray-700 hover:text-indigo-600"
             >
               How It Works
@@ -128,6 +131,7 @@ export default function Navbar() {
             {/* CTA: MOBILE */}
             <a
               href="#get-started"
+              onClick={() => setIsOpen(false)}
               className="block w-full text-center mt-3 text-sm font-semibold bg-indigo-600 text-white rounded-lg px-4 py-2 hover:bg-indigo-500 transition shadow-md"
             >
               Join the Waitlist
