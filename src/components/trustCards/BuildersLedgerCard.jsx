@@ -22,7 +22,7 @@ export default function BuildersLedgerCard() {
           A Ghanaian founder based in Kumasi has created a tool that helps rural
           farmers access real-time weather alerts and coordinate shared
           transport for harvests - all optimized for low-bandwidth areas. The
-          system now supports over 40 villages.
+          system now supports over 40 communities.
         </p>
         <p className="text-sm text-gray-500">
           MpatiQ recognizes <em>Service Diligence</em>,{' '}
