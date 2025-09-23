@@ -8,6 +8,7 @@ import WaitlistForm from '../components/WaitlistForm';
 import AboutSection from '../components/AboutSection';
 import ClosingTruth from '../components/ClosingTruth';
 import HowItWorks from '../components/HowItWorks';
+import Footer from '../components/Footer';
 
 export default function Landing() {
   // export the Landing component as the default export from this page
@@ -141,7 +142,7 @@ export default function Landing() {
 
         {/* ===== FOOTER ===== */}
         {/* 7. Footer- The Quiet Close */}
-        <footer className="py-10">{/* Footer content will go here */}</footer>
+        <Footer/>
       </main>
     </div>
   );
