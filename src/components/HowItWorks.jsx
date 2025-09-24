@@ -1,5 +1,26 @@
 import { motion } from 'framer-motion';
 
+const BREATH = 5; // total spacing (animation duration + pause)
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      delayChildren: 0.8, // pause before first step
+      staggerChildren: BREATH,
+    },
+  },
+};
+
+const stepVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 3 }, // arrival takes ~3s
+  },
+};
+
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="py-20 px-6 bg-white scroll-mt-20">
@@ -12,15 +33,16 @@ export default function HowItWorks() {
         </p>
       </div>
 
-      {/* STEP 1: BEGIN YOUR MIRROR */}
-      <div className="mt-12 space-y-12 max-w-2xl mx-auto text-left">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3 }}
-          viewport={{ once: true }}
-          className="space-y-3"
-        >
+      {/* Steps sequence */}
+      <motion.div
+        className="mt-12 space-y-12 max-w-2xl mx-auto text-left"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={containerVariants}
+      >
+        {/* STEP 1 */}
+        <motion.div variants={stepVariants} className="space-y-3">
           <h3 className="text-xl font-semibold text-indigo-700">
             🔹 Step 1 — Begin Your Mirror
           </h3>
@@ -29,15 +51,8 @@ export default function HowItWorks() {
           </p>
         </motion.div>
 
-        {/* STEP 2: ACTIVATE PASSPORTS */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, delay: 4.6 }}
-          viewport={{ once: true }}
-          className="space-y-3"
-        >
+        {/* STEP 2 */}
+        <motion.div variants={stepVariants} className="space-y-3">
           <h3 className="text-xl text-indigo-700 font-semibold">
             🔹 Step 2 — Activate Passports
           </h3>
@@ -47,15 +62,8 @@ export default function HowItWorks() {
           </p>
         </motion.div>
 
-        {/* STEP 3: YOUR PROFILE EMERGES */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, delay: 9.2 }}
-          viewport={{ once: true }}
-          className="space-y-3"
-        >
+        {/* STEP 3 */}
+        <motion.div variants={stepVariants} className="space-y-3">
           <h3 className="text-xl text-indigo-700 font-semibold">
             🔹 Step 3 — Your Profile Emerges
           </h3>
@@ -65,15 +73,8 @@ export default function HowItWorks() {
           </p>
         </motion.div>
 
-        {/* STEP 4: CONNECTION THROUGH TRUST */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, delay: 13.8 }}
-          viewport={{ once: true }}
-          className="space-y-3"
-        >
+        {/* STEP 4 */}
+        <motion.div variants={stepVariants} className="space-y-3">
           <h3 className="text-xl text-indigo-700 font-semibold ">
             🔹 Step 4 — Connection Through Trust
           </h3>
@@ -84,24 +85,21 @@ export default function HowItWorks() {
 
         {/* CLOSING COUPLET */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, delay: 17.2 }}
-          viewport={{ once: true }}
+          variants={stepVariants}
           className="mt-16 space-y-6 text-center"
         >
           <div className="rounded-lg border border-indigo-200 bg-indigo-50 p-8 shadow-sm">
-            <p className="text-lg md:text-xl text-gray-800 leading relaxed">
+            <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
               Your Trust Mirror opens doors — to work, to kinship, to circles
               that honor who you are.
             </p>
-            <p className="text-lg md:text-xl text-gray-800 leading relaxed">
+            <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
               What grows from your trust is yours: opportunity, connection,
               clarity.
             </p>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 }
