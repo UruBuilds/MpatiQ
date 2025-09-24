@@ -11,9 +11,8 @@ export default function SoulAnchorCard() {
         {/* Tags */}
         {/* Badge Component 1 ~ Emotive  */}
         <Badge category="emotive" variant="primary">
-           Devotion
+          Devotion
         </Badge>
-        
 
         {/* Badge Component 2 ~ Emotive */}
 
@@ -23,9 +22,8 @@ export default function SoulAnchorCard() {
       </div>
       {/* Core P tag for Soul Anchor */}
       <p className="text-gray-700 text-base mb-2">
-        After losing her daughter, one woman began anonymously leaving flowers
-        for new mothers at the same hospital. She has done this quietly for 9
-        years.
+        After losing her daughter, Adaora began leaving flowers for new mothers
+        at the hospital — and has kept this vigil quietly for 9 years.
       </p>
       {/* Domain recognition */}
       <p className="text-sm text-gray-500">

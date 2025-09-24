@@ -74,7 +74,7 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="space-y-3"
         >
-          <h3 className="text-xl text-indigo-700 font-semibold">
+          <h3 className="text-xl text-indigo-700 font-semibold ">
             🔹 Step 4 — Connection Through Trust
           </h3>
           <p className="text-gray-600 leading-relaxed">
@@ -86,7 +86,7 @@ export default function HowItWorks() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, delay: 11 }}
+          transition={{ duration: 3, delay: 18.4 }}
           viewport={{ once: true }}
           className="mt-16 space-y-6 text-center"
         >

@@ -24,13 +24,10 @@ export default function MentorsPathCard (){
           <Badge category="structural" variant="secondary">
             Community
           </Badge>
-
-          
         </div>
         <p className="text-gray-700 text-base mb-2">
-          In the Crenshaw area of South LA, a clothing store rooted in legacy
-          mentors youth and provides work for formerly incarcerated community
-          members-offering whole paths with dignity.
+          A clothing store that mentors youth and provides work for formerly
+          incarcerated community members now creates new paths with dignity.
         </p>
         <p className="text-sm text-gray-500">
           MpatiQ recognizes <em>Community Integrity</em>,{' '}

@@ -3,7 +3,7 @@
 
 // Importing the Badge component that has the universal Badge mapping
 
-import Badge from "../Badge";
+import Badge from '../Badge';
 
 export default function CareAndCustodyCard() {
   return (
@@ -23,10 +23,9 @@ export default function CareAndCustodyCard() {
       </div>
 
       <p className="text-gray-700 text-base mb-2">
-        Over the last 9 years in Atlanta, Aminah has worked night shifts in
-        pediatric oncology. She's stayed past shifts to sit with grieving
-        families, covered coworkers' emergencies without being asked, and never
-        missed a single handoff in 3,200 shifts.
+        Aminah has worked 9 years of night shifts in pediatric oncology —
+        sitting with grieving families, covering coworkers’ emergencies, and
+        never missing a single handoff in 3,200 shifts.
       </p>
 
       <p className="text-sm text-gray-500">

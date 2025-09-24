@@ -15,18 +15,20 @@ export default function ScholarsFlameCard() {
 
         {/* Badge Component = Structural */}
 
-        <Badge category="structural" variant='primary'>Self-Made</Badge>
+        <Badge category="structural" variant="primary">
+          Self-Made
+        </Badge>
 
         {/* Badge Component 2 = Structural */}
 
-        <Badge category="structural" variant='secondary'>Inventor</Badge>
-        
-       
+        <Badge category="structural" variant="secondary">
+          Inventor
+        </Badge>
+
         <p className="text-gray-700 text-base mb-2">
-          In a quiet corner of Ebonyi State, Zed has spent over 5,000 logged
-          hours self-studying electrical engineering and applying it into
-          propulsion inventions. He made his first export in August and
-          continues forward.{' '}
+          Zed has logged over 5,000 hours self-studying electrical engineering
+          and building propulsion inventions — making his first export in
+          August, and still moving forward.{' '}
         </p>
         <p className="text-sm text-gray-500">
           MpatiQ recognizes <em>Learning/Teaching Honor</em>,{' '}

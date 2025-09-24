@@ -23,12 +23,11 @@ export default function CreativeStewardCard() {
         <Badge category="structural" variant="secondary">
           Community
         </Badge>
-        
       </div>
       <p className="text-gray-700 text-base mb-2">
-        In East London, a creative collective has over the years become a
-        sanctuary of expression-hosting free Thursday gatherings, sharing
-        members poems and pieces, and growing a new creative canon.
+        In East London, a creative collective has built a sanctuary of
+        expression — hosting Thursday gatherings, sharing poems, and growing a
+        new creative canon.
       </p>
       <p className="text-sm text-gray-500">
         MpatiQ recognizes <em>Creative Stewardship</em>,{' '}

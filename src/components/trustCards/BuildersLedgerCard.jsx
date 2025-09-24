@@ -9,20 +9,19 @@ export default function BuildersLedgerCard() {
             Builder's Ledger
           </h3>
           {/* Badge 1 Component */}
-          <Badge category= "structural" variant="primary" >
+          <Badge category="structural" variant="primary">
             Builder
           </Badge>
 
           {/* Badge Component~ Steward */}
-          <Badge category= "structural" variant="secondary">
+          <Badge category="structural" variant="secondary">
             Steward
           </Badge>
         </div>
         <p className="text-gray-700 text-base mb-2">
-          A Ghanaian founder based in Kumasi has created a tool that helps rural
-          farmers access real-time weather alerts and coordinate shared
-          transport for harvests - all optimized for low-bandwidth areas. The
-          system now supports over 40 communities.
+          A tool delivering weather alerts and coordinating harvest transport
+          for farmers — built by a founder in Iowa, optimized for rural
+          networks, now serves over 40 communities.
         </p>
         <p className="text-sm text-gray-500">
           MpatiQ recognizes <em>Service Diligence</em>,{' '}
