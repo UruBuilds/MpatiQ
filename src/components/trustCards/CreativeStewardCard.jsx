@@ -26,7 +26,7 @@ export default function CreativeStewardCard() {
       </div>
       <p className="text-gray-700 text-base mb-2">
         In East London, a creative collective has built a sanctuary of
-        expression — hosting Thursday gatherings, sharing poems, and growing a
+        expression, hosting Thursday gatherings, sharing poems, and growing a
         new creative canon.
       </p>
       <p className="text-sm text-gray-500">

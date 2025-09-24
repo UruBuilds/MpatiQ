@@ -78,7 +78,7 @@ export default function HowItWorks() {
             🔹 Step 4 — Connection Through Trust
           </h3>
           <p className="text-gray-600 leading-relaxed">
-            Offer your trust — so others find you, and you them.
+            Offer your trust. So others find you, and you them.
           </p>
         </motion.div>
 

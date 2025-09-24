@@ -18,8 +18,8 @@ export default function HandsOfHonorCard() {
 
       {/*  */}
       <p className="text-gray-700 text-base mb-2">
-        Ms. J, a Lyft driver, has completed over 21,000 rides with perfect
-        punctuality since 2020.
+        Ms. J, a Lyft driver, has completed over 21,000 rides — earning a
+        reputation for punctuality since 2020.
       </p>
       <p className="text-sm text-gray-500">
         MpatiQ recognizes <em>Service Diligence</em>,{' '}

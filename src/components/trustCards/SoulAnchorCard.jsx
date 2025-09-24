@@ -23,7 +23,7 @@ export default function SoulAnchorCard() {
       {/* Core P tag for Soul Anchor */}
       <p className="text-gray-700 text-base mb-2">
         After losing her daughter, Adaora began leaving flowers for new mothers
-        at the hospital — and has kept this vigil quietly for 9 years.
+        at a Lagos hospital — and has kept this vigil quietly for 9 years.
       </p>
       {/* Domain recognition */}
       <p className="text-sm text-gray-500">

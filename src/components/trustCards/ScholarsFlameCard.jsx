@@ -26,9 +26,10 @@ export default function ScholarsFlameCard() {
         </Badge>
 
         <p className="text-gray-700 text-base mb-2">
-          Zed has logged over 5,000 hours self-studying electrical engineering
-          and building propulsion inventions — making his first export in
-          August, and still moving forward.{' '}
+          In a quiet corner of Ebonyi State, a young inventor has spent over
+          5,000 hours teaching himself electrical engineering and building
+          propulsion systems. In August, he made his first export. And he’s
+          still moving forward.{' '}
         </p>
         <p className="text-sm text-gray-500">
           MpatiQ recognizes <em>Learning/Teaching Honor</em>,{' '}

@@ -15,7 +15,7 @@ export default function WitnessedGrowthCard() {
         </Badge>
       </h3>
       <p className="mb-2 text-base text-gray-700">
-        Carlos returned and rebuilt trust — 1,400 on-time deliveries over 18
+        Carlos returned and rebuilt trust: 1,400 on-time deliveries over 18
         months, after two suspensions for missed orders.
       </p>
       <p className="text-sm text-gray-500">

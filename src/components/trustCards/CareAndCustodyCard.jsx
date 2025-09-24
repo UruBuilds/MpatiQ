@@ -23,9 +23,9 @@ export default function CareAndCustodyCard() {
       </div>
 
       <p className="text-gray-700 text-base mb-2">
-        Aminah has worked 9 years of night shifts in pediatric oncology —
+        In Atlanta, Aminah has worked 9 years of night shifts in pediatric oncology,
         sitting with grieving families, covering coworkers’ emergencies, and
-        never missing a single handoff in 3,200 shifts.
+        carrying handoffs through thousands of shifts.
       </p>
 
       <p className="text-sm text-gray-500">

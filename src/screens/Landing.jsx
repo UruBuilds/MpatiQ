@@ -79,7 +79,7 @@ export default function Landing() {
               transition={{ duration: 2.0, ease: 'easeOut' }}
               className="text-xl md:text-2xl text-gray-700 leading-loose max-w-2xl mx-auto"
             >
-              MpatiQ offers a fairer way to show and find trust — honoring what
+              MpatiQ offers a fairer way to show and find trust. <br/> Honoring what
               you’ve carried. <br />
               Who you are{' '}
               <span className="font-semibold text-indigo-600">becoming</span>.

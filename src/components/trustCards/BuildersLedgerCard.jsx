@@ -20,7 +20,7 @@ export default function BuildersLedgerCard() {
         </div>
         <p className="text-gray-700 text-base mb-2">
           A tool delivering weather alerts and coordinating harvest transport
-          for farmers — built by a founder in Iowa, optimized for rural
+          for farmers. Built by a founder in Iowa, optimized for rural
           networks, now serves over 40 communities.
         </p>
         <p className="text-sm text-gray-500">

@@ -26,7 +26,7 @@ export default function MentorsPathCard (){
           </Badge>
         </div>
         <p className="text-gray-700 text-base mb-2">
-          A clothing store that mentors youth and provides work for formerly
+          In Los Angeles, a clothing store that mentors youth and provides work for formerly
           incarcerated community members now creates new paths with dignity.
         </p>
         <p className="text-sm text-gray-500">
