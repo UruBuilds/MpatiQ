@@ -86,18 +86,18 @@ export default function HowItWorks() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, delay: 18.4 }}
+          transition={{ duration: 3, delay: 17.2 }}
           viewport={{ once: true }}
           className="mt-16 space-y-6 text-center"
         >
           <div className="rounded-lg border border-indigo-200 bg-indigo-50 p-8 shadow-sm">
             <p className="text-lg md:text-xl text-gray-800 leading relaxed">
-              Your Trust Mirror can open doors - to work, to kinship, to the
-              circles that honor who you are.
+              Your Trust Mirror opens doors — to work, to kinship, to circles
+              that honor who you are.
             </p>
             <p className="text-lg md:text-xl text-gray-800 leading relaxed">
-              What grows from your trust is yours - invitations, opportunities,
-              or simply clarity.
+              What grows from your trust is yours: opportunity, connection,
+              clarity.
             </p>
           </div>
         </motion.div>

@@ -31,8 +31,7 @@ export default function AboutSection() {
           transition={{ duration: 1.6, ease: 'easeOut', delay: 0.4 }}
           className="text-lg md:text-xl text-gray-800 leading-relaxed"
         >
-          Our world ranks and scores - yet integrity carried quietly is often
-          unseen.
+          The world ranks and scores. Integrity carried quietly goes unseen.
         </motion.p>
 
         {/* Our second core "About" words */}
@@ -46,9 +45,8 @@ export default function AboutSection() {
           transition={{ duration: 1.6, delay: 0.4 }}
           className="text-lg md:text-xl text-gray-800 leading-relaxed"
         >
-          MpatiQ is a mirror: showing the integrity you've carried, the growth
-          you've lived, and the trust you can find in others as they find in
-          you.
+          MpatiQ is a mirror — revealing the integrity you’ve carried, the
+          growth you’ve lived, and the trust that finds you as you find it.
         </motion.p>
       </motion.div>
     </section>
