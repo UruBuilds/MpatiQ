@@ -1,12 +1,38 @@
-# React + Vite
+# MpatiQ — Foundational Surface (2025)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository preserves some of the earliest public-facing work on MpatiQ from 2025.
 
-Currently, two official plugins are available:
+These foundations were building on a simple observation:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Many of the people most trusted in real communities carry reputations that do not travel well.
 
-## Expanding the ESLint configuration
+The work contained here represents the foundational directions of MpatiQ to set out on a path that creates methods for how records of lived responsibility, witnessed conduct, and trust might persist across roles, communities, and digital systems without being reduced to scores, rankings, or permanent judgments.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Historical Context
+
+This repository is preserved as a historical artifact.
+
+While MpatiQ has evolved substantially since this work was first created, these foundations remain an important record of its emergence, early language, and initial private and public framing.
+
+Many ideas visible here would later evolve, be revised, or be replaced entirely.
+
+Others remain central to the project's direction.
+
+## Themes
+
+* Trust as infrastructure
+* Trust portability across contexts
+* Witnessed conduct
+* Continuity over time
+* Contextual meaning
+* Non-reductive representation
+
+## Why This Repository Is Public
+
+This work is shared so that builders, researchers, and curious minds can study the questions, architectural choices, and lines of inquiry that shaped MpatiQ's beginnings.
+
+The work continues elsewhere.
+
+## License
+
+MIT
